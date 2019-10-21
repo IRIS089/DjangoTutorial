@@ -39,3 +39,14 @@ Part 1 - Django Overview
 6. Flow in a Django project
 - when you enter a url, first django will look in the urls.py in the project folder to know which app to go to, once it does this it will go to that apps urls.py file to figure out where to go next, the urls.py will direct us to views.py which will direct us to a specific template in our templates folder
 
+
+Part 3 - Build a Django Application
+
+1. About this section
+2. Django by error messages
+3. Create a Django App
+4. Build your routes
+5. Create a view
+6. Create a template
+7. Add bootstrap to your app
+8. Recap and Outlook

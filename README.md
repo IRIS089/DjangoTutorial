@@ -108,3 +108,6 @@ Part 4 - Showcase your projects
 8. Create your templates
 9. Add some style!
 10. Recap and Outlook
+
+2. Django Models
+- The Django ORM stands for Object Relational Mapper. In a nut shell, the ORM allows us to use python code to communicate with our database which only understands SQL. 

@@ -111,3 +111,8 @@ Part 4 - Showcase your projects
 
 2. Django Models
 - The Django ORM stands for Object Relational Mapper. In a nut shell, the ORM allows us to use python code to communicate with our database which only understands SQL. 
+
+- Functions -
+python manage.py runserver - starts the app
+python manage.py makemigrations - creates the migrations after there are changes to the model
+python manage.py migrate - runs the migrations scripts created by makemigrations

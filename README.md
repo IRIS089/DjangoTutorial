@@ -53,3 +53,58 @@ Part 3 - Build a Django Application
 
 -Django Double Folder Structure-
 The reason why we have the double structure for templates ('projects/templates/projects/index.html') is because django collects all the templates from all the projects into one folder called templates. If we did not create the double structure then our index.html from each of our apps would be overwritten by the next app django loaded.
+
+- Created a Django app called "projects"
+(venv)$ python manage.py startapp projects
+
+- Registered your app in settings.py
+INSTALLED_APPS = [
+	# django apps
+	# my apps
+	"projects",
+]
+
+- Dug your way through different URL configurations
+http://localhost:8000/projects/ -> portfolios.urls -> include() projects.urls -> path() views.py
+
+- Created a view function that returns a HttpResponse object
+def project_list(request):
+	return HttpResponse("<h1>Aye!</h1>")
+
+- Changed the view function to render a template instead
+def project_list(request):
+	return render(request, "projects/index.html")
+
+- Created a Django template containing HTML code
+<body>
+	<h1>Hello template!</h1>
+</body>
+
+- Understood the nested template folder structure in Django
+
+- Registered your new template folder in settings.py
+TEMPLATES = [
+	{
+	"DIRS":[os.path.join(BASE_DIR,"projects/templates"),]
+	}
+]
+
+- Added Bootstrap styling to your app
+<head>
+	<link rel="stylesheet" href="link-to-bootstrap-CDN/bootstrap.css">
+</head>
+
+- We encountered many errors and solved them!
+
+
+Part 4 - Showcase your projects
+1. About this section
+2. Django Models
+3. Migrations and your SQL Database
+4. Add static files
+5. Use the Django Shell
+6. Build your routes
+7. Create your views
+8. Create your templates
+9. Add some style!
+10. Recap and Outlook

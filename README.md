@@ -116,3 +116,4 @@ Part 4 - Showcase your projects
 python manage.py runserver - starts the app
 python manage.py makemigrations - creates the migrations after there are changes to the model
 python manage.py migrate - runs the migrations scripts created by makemigrations
+python manage.py shell - start the interactive shell that comes with django

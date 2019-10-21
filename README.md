@@ -50,3 +50,6 @@ Part 3 - Build a Django Application
 6. Create a template
 7. Add bootstrap to your app
 8. Recap and Outlook
+
+-Django Double Folder Structure-
+The reason why we have the double structure for templates ('projects/templates/projects/index.html') is because django collects all the templates from all the projects into one folder called templates. If we did not create the double structure then our index.html from each of our apps would be overwritten by the next app django loaded.
